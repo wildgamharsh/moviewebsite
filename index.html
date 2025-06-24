@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HarshReview</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../fonts.css"">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bilbo+Swash+Caps&family=Borel&family=Bowlby+One+SC&family=Caprasimo&family=Carattere&family=Carter+One&family=Chiron+Sung+HK&family=Coiny&family=Comic+Neue&family=Cookie&family=Corinthia&family=Dancing+Script&family=Delius&family=DM+Sans&family=Edu+VIC+WA+NT+Hand+Pre&family=Electrolize&family=Engagement&family=Galada&family=Gwendolyn&family=Holtwood+One+SC&family=Huninn&family=Iceland&family=Italianno&family=Jost&family=Kalam&family=Kavoon&family=Leckerli+One&family=Libre+Baskerville&family=Lobster&family=Lovers+Quarrel&family=Luckiest+Guy&family=Ma+Shan+Zheng&family=Marck+Script&family=Matangi&family=Meow+Script&family=Montserrat&family=Ms+Madi&family=Notable&family=Orbitron&family=Oregano&family=Pacifico&family=Parisienne&family=Pirata+One&family=Racing+Sans+One&family=Rancho&family=Rochester&family=Roboto&family=Romanesco&family=Rouge+Script&family=Sacramento&family=Solitreo&family=Tangerine&family=Texturina&family=The+Nautigal&family=UnifrakturMaguntia&family=WDXL+Lubrifont+JP+N&family=Yellowtail&family=Yesteryear&display=swap" rel="stylesheet">
+
+    <style>
+      .gradient-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg pb-3 mb-0 bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">HarshReview</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="moviereview.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="collections.html">Collections</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Featured</a
+              >
+              <ul class="dropdown-menu">
+                                <li>
+                  <a class="dropdown-item" href="top10tvshows.html"
+                    >Harshveer's Top 10 TV Shows</a
+                  >
+                </li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >HarshPro's Top Charts</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Akaal: The Unconquered"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Carousel Section -->
+    <div class="container-fluid mt-3">
+      <div class="row g-0">
+        <div class="col-lg-8 position-relative">
+          <div
+            id="customCarousel"
+            class="carousel slide h-100
+            data-bs-ride="carousel"
+          >
+
+          
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active position-relative h-100">
+                <img
+                  src="assets/images/Detective Sherdil h.jpg"
+                  class="d-block w-100 h-100 object-fit-cover"
+                  alt="Akaal Wall"
+                />
+                <div class="gradient-overlay d-flex align-items-end p-3">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="assets/images/Detective Sherdil Poster.jpg"
+                      class="me-3"
+                      style="width: 150px; border-radius: 0.5rem"
+                      alt="Akaal Poster"
+                    />
+                    <div>
+                      <h5 class="fs-6 btn btn-outline-warning mb-1">#JustReleased</h5>
+                      <h5 class="fs-3 text-warning mb-1">
+                        Akaal: The Unconquered
+                      </h5>
+                      <p class="text-light mb-1">
+                        A Sikh warrior’s epic stand against tyranny and
+                        injustice.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item active position-relative h-100">
+                <img
+                  src="assets/images/THE GREAT INDIAN KAPIL SHOW WALLPAPER.webp"
+                  class="d-block w-100 h-100 object-fit-cover"
+                  alt="Akaal Wall"
+                />
+                <div class="gradient-overlay d-flex align-items-end p-3">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="assets/images/THE GREAT INDIAN KAPIL SHOW POSTER 4.jpg"
+                      class="me-3"
+                      style="width: 150px; border-radius: 0.5rem"
+                      alt="Akaal Poster"
+                    />
+                    <div>
+                      <h5 class="fs-6 btn btn-outline-warning mb-1">#JustReleased</h5>
+                      <h5 class="fs-3 text-warning mb-1">
+                        The Great Indian Kapil Show
+                      </h5>
+                      <p class="text-light mb-1">
+                        The best comedy show in India is back.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item active position-relative h-100">
+                <img
+                  src="assets/images/CPD h.jpeg"
+                  class="d-block w-100 h-100 object-fit-cover"
+                  alt="Akaal Wall"
+                />
+                <div class="gradient-overlay d-flex align-items-end p-3">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="assets/images/Chicago PD Poster.jpg"
+                      class="me-3"
+                      style="width: 150px; border-radius: 0.5rem"
+                      alt="Akaal Poster"
+                    />
+                    <div>
+                      <h5 class="fs-6 btn btn-outline-info mb-1">#JustReleased</h5>
+                      <h5 class="fs-3 text-info mb-1">
+                        Chicago P.D.
+                      </h5>
+                      <p class="text-light mb-1">
+                        Experience Sgt. Hank Voight in action running the Intelligence Unit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Add remaining carousel items similarly, removing 'active' from all except first -->
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#customCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#customCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Up Next -->
+        <div
+          class="col-lg-4 bg-black text-white p-3"
+          style="max-height: 100vh; overflow-y: auto"
+        >
+          <h6 class="fw-bold text-warning mb-3 fs-5">
+            Today's Recommendations
+          </h6>
+          <div class="d-flex mb-3">
+            <img
+              src="assets/images/Chicago PD Poster.jpg"
+              class="me-2"
+              style="width: 70px; object-fit: cover; border-radius: 0.25rem"
+              alt="Chicago PD Poster"
+            />
+            <div>
+              <h6 class="mb-0 text-warning">Chicago P.D.</h6>
+              <small class="text-white-50"
+                >Experience Hank Voight in action taking down Chicago's
+                underworld.</small
+              >
+            </div>
+          </div>
+
+          
+          <div class="d-flex mb-3">
+            <img
+              src="assets/images/Detective Sherdil Poster.jpg"
+              class="me-2"
+              style="width: 70px; object-fit: cover; border-radius: 0.25rem"
+              alt="Chicago PD Poster"
+            />
+            <div>
+              <h6 class="mb-0 text-warning">Detective Sherdil</h6>
+              <small class="text-white-50"
+                >Watch a Punjabi Detective solve a murder case of a rich billionaire in Budapest. </small
+              >
+            </div>
+          </div>
+
+          <div class="d-flex mb-3">
+            <img
+              src="assets/images/THE GREAT INDIAN KAPIL SHOW POSTER 4.jpg"
+              class="me-2"
+              style="width: 70px; object-fit: cover; border-radius: 0.25rem"
+              alt="Chicago PD Poster"
+            />
+            <div>
+              <h6 class="mb-0 text-warning">The Great Indian Kapil Show</h6>
+              <small class="text-white-50"
+                >Kapil Sharma is back to entertain you along with an extended family including Navjot Singh Sidhu. </small
+              >
+            </div>
+          </div>
+
+
+          <!-- Add more recommendations -->
+        </div>
+      </div>
+    </div>
+
+
+    <section id="Top 3 in India Today">
+
+
+
+      <h1 class="heading my-5 text-center display-3"> TRENDING ARTISTS </h1>
+      <div class="container my-2 background-black rounded-5">
+        
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="flex-box-center">
+              <div class="flex-box-down">
+                <img class="round-image mt-5" src="assets/images/diljit-dosanjh.png">
+                <h3 class="heading-sec"> Diljit Dosanjh </h3>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="flex-box-center">
+              <div class="flex-box-down">
+                <img class="round-image mt-5" src="assets/images/gippy-grewal-1.webp">
+                <h3 class="heading-sec"> Gippy Grewal </h3>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="flex-box-center">
+              <div class="flex-box-down">
+                <img class="round-image mt-5" src="assets/images/tom cruise.webp">
+                <h3 class="heading-sec"> Tom Cruise </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+  </body>
+</html>
